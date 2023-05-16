@@ -1,0 +1,39 @@
+body{
+    overflow: hidden;
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
+}
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(166, 193, 202);   
+}
+.digitalClock h1{
+    display: inline;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width:768px){
+    #bar1,#bar2{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock h1{
+        display: block;
+        font-size: 4rem;
+    }
+}
